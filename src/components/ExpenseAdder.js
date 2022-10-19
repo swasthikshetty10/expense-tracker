@@ -7,12 +7,12 @@ function ExpenseAdder() {
             <form className='expense-adder'>
                 <div>
                     <label>Name </label>
-                    <input type="text" placeholder="Where you have Spent?" />
+                    <input type="text" placeholder="Where did you spend?" />
                 </div>
                 <div>
                     <label>Cost </label>
                     <input className='amount' type="number" />
-                    <span> INR</span>
+                    <span> ₹</span>
                 </div>
                 <div>
                     <label>Date </label>

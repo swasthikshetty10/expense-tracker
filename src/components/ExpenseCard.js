@@ -6,7 +6,7 @@ function ExpenseCard({amount, name, date}) {
 		<div className='expense-card'>
 			<div className='card-body'>
 				<h3>{name} <span>₹{amount}</span></h3>
-				<h6>{date.toLocaleDateString('en-gb',  { hour12: true, }).toUpperCase()}</h6>
+				<h6>{date.toLocaleDateString('en-uk')}</h6>
 			</div>
 			<button><AiOutlineDelete /></button>
 		</div>

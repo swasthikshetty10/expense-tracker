@@ -1,24 +1,32 @@
 .expense-adder {
-  padding: 10px;
+  padding: 10px 16px;
   background-color: #eee;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .expense-adder > div {
-  margin: 5px 0;
+  margin: 8px 0;
 }
 
 .expense-adder > button {
-  background-color: green;
-  border: none;
-  padding: 5px;
-  border-radius: 5px;
-  color: white;
+	margin-top: 4px;
+	color: rgb(0, 115, 255);
+	background-color: rgb(196, 223, 255);
+  border: 1px solid rgb(0, 115, 255);
+  padding: 10px;
+	transition: background-color 200ms;
+  border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
 }
+
+.expense-adder > button:hover {
+	background-color: rgb(161, 202, 252);
+
+}
+
 .expense-adder input {
-  padding: 5px;
+  padding: 7px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -39,12 +47,13 @@
   cursor: pointer;
   border-radius: 10px;
   border: none;
-  color: maroon;
+  color: rgb(176, 4, 4);
+	/* background-color: rgb(252, 208, 208); */
   transition: background-color 200ms;
 }
 
 .expense-card button:hover {
-  background-color: rgb(252, 208, 208);
+	background-color: rgb(250, 202, 202);
 }
 
 .card-body {
@@ -52,7 +61,7 @@
 }
 
 .expense-card h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 5px 0 8px;
 }
 
