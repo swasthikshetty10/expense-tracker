@@ -11,6 +11,7 @@
 .expense-adder > div {
   margin: 5px 0;
 }
+
 .expense-adder > button {
   background-color: green;
   border: none;
@@ -27,4 +28,45 @@
 }
 .amount {
   width: 50px;
+}
+.expense-card {
+  display: flex;
+  background: #eee;
+  border-radius: 10px;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.expense-card button {
+  font-size: 1.8rem;
+  padding: 10px 16px 6px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  color: maroon;
+  transition: background-color 200ms;
+}
+
+.expense-card button:hover {
+  background-color: rgb(252, 208, 208);
+}
+
+.card-body {
+  padding: 0px 12px;
+}
+
+.expense-card h3 {
+  font-size: 1.3rem;
+  margin: 5px 0;
+}
+
+.expense-card h3 span {
+  color: green;
+}
+
+.expense-card h6 {
+  margin: 5px 0;
+  color: grey;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
