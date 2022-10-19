@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import ExpenseAdder from './components/ExpenseAdder';
 import ExpenseCard from './components/ExpenseCard';
+import Header from './components/Header';
 
 function App() {
   const [data, setData] = useState([]);
@@ -15,19 +16,20 @@ function App() {
   function addExpense(expense) {
     let updatedData = [...data, expense]
     setData(updatedData);
-    setTotal(total + expense.amount);
+    setTotal(total + parseInt(expense.amount));
     localStorage.data = JSON.stringify([...data, expense])
   }
   function deleteExpense(index) {
     const updatedData = data.filter((_, i) => i !== index)
     const expense = data[index];
     setData(updatedData);
-    setTotal(total - expense.amount);
+    setTotal(total - parseInt(expense.amount));
     localStorage.data = JSON.stringify(updatedData);
   }
   return (
     <div className="App">
       <div className='wrapper'>
+        <Header amount={total} />
         <ExpenseAdder addExpense={addExpense} />
         {
           data.map(

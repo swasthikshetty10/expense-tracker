@@ -1,8 +1,13 @@
 import React from 'react'
 
-function Header() {
+function Header({ amount }) {
     return (
-        <div>Header</div>
+        <div className='header'>
+            <h1>Expense Tracker</h1>
+            <div>
+                <h4>total expense : <span>{amount}</span>₹</h4>
+            </div>
+        </div>
     )
 }
 

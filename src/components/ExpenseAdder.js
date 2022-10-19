@@ -23,11 +23,11 @@ function ExpenseAdder(props) {
             <form onSubmit={handleSubmit} className='expense-adder'>
                 <div>
                     <label>Name </label>
-                    <input onChange={(e) => { console.log(e.target.value); setName(e.target.value) }} value={name} type="text" placeholder="Where did you spend?" />
+                    <input required onChange={(e) => { console.log(e.target.value); setName(e.target.value) }} value={name} type="text" placeholder="Where did you spend?" />
                 </div>
                 <div>
                     <label>Cost </label>
-                    <input onChange={(e) => { setAmount(e.target.value) }} value={amount} className='amount' type="number" />
+                    <input onChange={(e) => { setAmount(parseInt(e.target.value)) }} value={amount} className='amount' type="number" />
                     <span>₹</span>
                 </div>
                 <div>

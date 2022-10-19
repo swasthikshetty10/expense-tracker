@@ -9,20 +9,19 @@
 }
 
 .expense-adder > button {
-	margin-top: 4px;
-	color: rgb(0, 115, 255);
-	background-color: rgb(196, 223, 255);
+  margin-top: 4px;
+  color: rgb(0, 115, 255);
+  background-color: rgb(196, 223, 255);
   border: 1px solid rgb(0, 115, 255);
   padding: 10px;
-	transition: background-color 200ms;
+  transition: background-color 200ms;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
 }
 
 .expense-adder > button:hover {
-	background-color: rgb(161, 202, 252);
-
+  background-color: rgb(161, 202, 252);
 }
 
 .expense-adder input {
@@ -48,12 +47,12 @@
   border-radius: 10px;
   border: none;
   color: rgb(176, 4, 4);
-	/* background-color: rgb(252, 208, 208); */
+  /* background-color: rgb(252, 208, 208); */
   transition: background-color 200ms;
 }
 
 .expense-card button:hover {
-	background-color: rgb(250, 202, 202);
+  background-color: rgb(250, 202, 202);
 }
 
 .card-body {
@@ -66,11 +65,11 @@
 }
 
 .expense-card h3 span {
-	font-size: smaller;
-	padding: 6px 8px;
-	margin-left: 5px;
-	border-radius: 8px;
-	background: rgb(197, 243, 197);
+  font-size: smaller;
+  padding: 6px 8px;
+  margin-left: 5px;
+  border-radius: 8px;
+  background: rgb(197, 243, 197);
   color: green;
 }
 
@@ -87,4 +86,12 @@
 }
 .wrapper > * {
   margin: 15px 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #eee;
+  border-radius: 10px;
 }
