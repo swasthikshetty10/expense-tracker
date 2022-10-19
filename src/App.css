@@ -1,6 +1,7 @@
 .expense-adder {
   padding: 16px 16px;
   background-color: #eee;
+  border: 2px solid #ccc;
   border-radius: 10px;
 }
 
@@ -15,6 +16,10 @@
 .expense-adder > div > label {
   flex-basis: 50px;
 }
+
+.expense-adder > div > input {
+  flex-basis: 50%;
+} 
 
 .expense-adder > button {
   margin-top: 4px;
@@ -43,7 +48,7 @@
 .expense-card {
   margin-bottom: 10px;
   display: flex;
-  border: 2px solid #bbb;
+  border: 2px solid #ccc;
   background: #eee;
   border-radius: 10px;
   justify-content: space-between;
@@ -102,16 +107,27 @@
   gap: 10px;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  padding: 16px;
-  background: #eee;
-  border-radius: 10px;
+  align-items: flex-end;
+  padding-bottom: 16px;
+  /* background: #eee; */
+  border-bottom: 2px solid #eee;
+  /* border-radius: 10px; */
 }
-.header span {
-  font-size: 1.2rem;
+
+.header h1 {
+  margin: 0;
+}
+
+.header-total {
+  font-size: 1rem;
   font-weight: bold;
-  padding: 6px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 18px;
   border-radius: 8px;
   background: rgb(197, 243, 197);
   color: green;
+  
 }
