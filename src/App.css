@@ -1,11 +1,7 @@
 .expense-adder {
   padding: 10px;
-  width: max-content;
-  margin: 0 auto;
   background-color: #eee;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 5px #ccc;
 }
 
 .expense-adder > div {
@@ -74,4 +70,12 @@
   color: grey;
   font-size: 0.8rem;
   font-weight: 500;
+}
+.wrapper {
+  padding: 5px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+.wrapper > * {
+  margin: 15px 0;
 }
