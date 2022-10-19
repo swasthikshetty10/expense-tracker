@@ -5,7 +5,7 @@ function Header({ amount }) {
         <div className='header'>
             <h1>Expense Tracker</h1>
             <div>
-                <h4>total expense : <span>{amount}</span>₹</h4>
+                <h4>total expense : <span>{amount}₹</span></h4>
             </div>
         </div>
     )
