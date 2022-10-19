@@ -28,7 +28,7 @@ function ExpenseAdder(props) {
                 <div>
                     <label>Cost </label>
                     <input onChange={(e) => { setAmount(e.target.value) }} value={amount} className='amount' type="number" />
-                    <span>₹</span>
+                    <span> ₹</span>
                 </div>
                 <div>
                     <label>Date </label>
