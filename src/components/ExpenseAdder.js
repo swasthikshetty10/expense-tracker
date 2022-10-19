@@ -1,22 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function ExpenseAdder() {
+function ExpenseAdder(props) {
+    const [name, setName] = useState('');
+    const [amount, setAmount] = useState(0);
+    const [date, setDate] = useState(new Date());
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log(name, amount, date);
+        const expense = {
+            name,
+            amount,
+            date
+        }
+        props.addExpense(expense);
+        setName('');
+        setAmount(0);
+        setDate(new Date());
 
+    }
     return (
         <div>
-            <form className='expense-adder'>
+            <form onSubmit={handleSubmit} className='expense-adder'>
                 <div>
                     <label>Name </label>
-                    <input type="text" placeholder="Where you have Spent?" />
+                    <input onChange={(e) => { console.log(e.target.value); setName(e.target.value) }} value={name} type="text" placeholder="Where you have Spent?" />
                 </div>
                 <div>
                     <label>Cost </label>
-                    <input className='amount' type="number" />
+                    <input onChange={(e) => { setAmount(e.target.value) }} value={amount} className='amount' type="number" />
                     <span> INR</span>
                 </div>
                 <div>
                     <label>Date </label>
-                    <input type="date" />
+                    <input onChange={(e) => { setDate(e.target.value) }} value={date} type="date" />
                 </div>
                 <button type="submit">+ Add Expense</button>
             </form>
