@@ -13,7 +13,6 @@
 
 .expense-adder > div > label {
   flex-basis: 7%;
-  flex-shrink: 0;
 }
 
 .expense-adder > div > input {
@@ -46,7 +45,9 @@
   width: 50px;
 }
 .expense-card {
+  margin-bottom: 10px;
   display: flex;
+  border: 2px solid #bbb;
   background: #eee;
   border-radius: 10px;
   justify-content: space-between;

@@ -31,11 +31,13 @@ function App() {
       <div className='wrapper'>
         <Header amount={total} />
         <ExpenseAdder addExpense={addExpense} />
-        {
-          data.map(
-            (expense, index) => <ExpenseCard key={index} name={expense.name} index={index} amount={expense.amount} deleteExpense={deleteExpense} date={expense.date} />
-          )
-        }
+        <div>
+          {
+            data.map(
+              (expense, index) => <ExpenseCard key={index} name={expense.name} index={index} amount={expense.amount} deleteExpense={deleteExpense} date={expense.date} />
+            )
+          }
+        </div>
       </div>
     </div>
   );
