@@ -57,10 +57,15 @@
 
 .expense-card h3 {
   font-size: 1.3rem;
-  margin: 5px 0;
+  margin: 5px 0 8px;
 }
 
 .expense-card h3 span {
+	font-size: smaller;
+	padding: 6px 8px;
+	margin-left: 5px;
+	border-radius: 8px;
+	background: rgb(197, 243, 197);
   color: green;
 }
 
