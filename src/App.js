@@ -9,6 +9,7 @@ function App() {
   const [total, setTotal] = useState(0);
   useEffect(() => {
     const expenses = JSON.parse(localStorage.getItem('data'));
+    setTotal(expenses.reduce((acc, curr) => acc + curr.amount, 0));
     if (expenses) {
       setData(expenses);
     }

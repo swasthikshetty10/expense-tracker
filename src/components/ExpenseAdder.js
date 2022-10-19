@@ -16,7 +16,6 @@ function ExpenseAdder(props) {
         setName('');
         setAmount(0);
         setDate(new Date());
-
     }
     return (
         <div>

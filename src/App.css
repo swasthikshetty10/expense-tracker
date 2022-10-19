@@ -1,24 +1,20 @@
 .expense-adder {
-  padding: 10px 16px;
+  padding: 16px 16px;
   background-color: #eee;
   border-radius: 10px;
 }
 
 .expense-adder > div {
   display: flex;
+  width: 100%;
+  max-width: 500px;
   align-items: center;
   gap: 10px;
   margin: 10px 0;
 }
-
 .expense-adder > div > label {
-  flex-basis: 7%;
+  flex-basis: 50px;
 }
-
-.expense-adder > div > input {
-  flex-basis: 43%;
-}
-
 
 .expense-adder > button {
   margin-top: 4px;
@@ -103,9 +99,19 @@
 }
 .header {
   display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 16px;
   background: #eee;
   border-radius: 10px;
+}
+.header span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: rgb(197, 243, 197);
+  color: green;
 }
