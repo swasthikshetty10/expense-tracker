@@ -1,0 +1,30 @@
+.expense-adder {
+  padding: 10px;
+  width: max-content;
+  margin: 0 auto;
+  background-color: #eee;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.expense-adder > div {
+  margin: 5px 0;
+}
+.expense-adder > button {
+  background-color: green;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.expense-adder input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.amount {
+  width: 50px;
+}
