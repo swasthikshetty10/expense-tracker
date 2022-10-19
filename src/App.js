@@ -13,15 +13,17 @@ function App() {
     }
   }, [])
   function addExpense(expense) {
-    setData([...data, expense]);
+    let updatedData = [...data, expense]
+    setData(updatedData);
     setTotal(total + expense.amount);
-    localStorage.data = JSON.stringify([...data])
+    localStorage.data = JSON.stringify([...data, expense])
   }
   function deleteExpense(index) {
+    const updatedData = data.filter((_, i) => i !== index)
     const expense = data[index];
-    setData(data.filter((_, i) => i !== index));
+    setData(updatedData);
     setTotal(total - expense.amount);
-    localStorage.data = JSON.stringify([...data]);
+    localStorage.data = JSON.stringify(updatedData);
   }
   return (
     <div className="App">
