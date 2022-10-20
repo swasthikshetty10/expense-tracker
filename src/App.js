@@ -40,7 +40,11 @@ function App() {
         <div>
           {
             data.map(
-              (expense, index) => <ExpenseCard key={index} name={expense.name} index={index} amount={expense.amount} deleteExpense={deleteExpense} date={expense.date} />
+              (expense, index) => <ExpenseCard
+                key={index} name={expense.name}
+                index={index} amount={expense.amount}
+                deleteExpense={deleteExpense}
+                date={expense.date} />
             )
           }
         </div>

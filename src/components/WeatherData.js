@@ -9,6 +9,7 @@ function WeatherData() {
             navigator.geolocation.getCurrentPosition(resolve, reject);
         });
     }
+
     async function fetchWeather() {
         setLoading(true);
         const position = await getMyLocation();
@@ -32,7 +33,6 @@ function WeatherData() {
                 <span>{weather.windspeed} mph</span>
                 <TbWind />
             </div>
-
         </div> : null
     )
 }
