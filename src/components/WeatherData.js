@@ -26,12 +26,12 @@ function WeatherData() {
     return (
         !loading ? <div className="weather">
             <div>
-                <span>{weather.temperature}</span>
                 <TbTemperature />
+                <span>{weather.temperature}</span>
             </div>
             <div>
-                <span>{weather.windspeed} mph</span>
                 <TbWind />
+                <span>{weather.windspeed} mph</span>
             </div>
         </div> : null
     )

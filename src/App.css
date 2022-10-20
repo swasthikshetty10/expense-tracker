@@ -134,16 +134,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 18px;
+  padding: 10px 16px;
   border-radius: 8px;
   background: #eee;
-  border: 2px solid #ccc;
+  /* border: 2px solid #ccc; */
 }
 .weather > div {
   display: flex;
+  gap: 2px;
   align-items: center;
   padding: 10px 18px;
   border-radius: 8px;
   background: rgb(196, 223, 255);
-  border: 1px solid rgb(0, 115, 255);
+  /* border: 1px solid rgb(0, 115, 255); */
 }
