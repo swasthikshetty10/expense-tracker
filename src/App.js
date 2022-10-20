@@ -3,6 +3,7 @@ import './App.css';
 import ExpenseAdder from './components/ExpenseAdder';
 import ExpenseCard from './components/ExpenseCard';
 import Header from './components/Header';
+import WeatherData from './components/WeatherData';
 
 function App() {
   const [data, setData] = useState([]);
@@ -14,6 +15,9 @@ function App() {
       setData(expenses);
     }
   }, [])
+
+
+
   function addExpense(expense) {
     let updatedData = [...data, expense]
     setData(updatedData);
@@ -30,6 +34,7 @@ function App() {
   return (
     <div className="App">
       <div className='wrapper'>
+        <WeatherData />
         <Header amount={total} />
         <ExpenseAdder addExpense={addExpense} />
         <div>
