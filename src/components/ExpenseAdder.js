@@ -6,7 +6,6 @@ function ExpenseAdder(props) {
     const [date, setDate] = useState(new Date());
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(name, amount, date);
         const expense = {
             name,
             amount,
